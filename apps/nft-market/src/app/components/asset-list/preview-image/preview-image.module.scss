@@ -1,0 +1,27 @@
+.imgContainer {
+  .assetImg:hover {
+    transform: scale(1.05);
+    -webkit-transition: all 0.15s 0.1s ease;
+    -moz-transition: all 0.15s 0.1s ease;
+    -o-transition: all 0.15s 0.1s ease;
+    transition: all 0.15s 0.1s ease;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+    border: none;
+  }
+}
+
+

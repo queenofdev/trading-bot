@@ -1,0 +1,28 @@
+{
+  "root": "apps/nft-market-e2e",
+  "sourceRoot": "apps/nft-market-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/nft-market-e2e/cypress.json",
+        "devServerTarget": "nft-market:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "nft-market:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/nft-market-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["nft-market"]
+}

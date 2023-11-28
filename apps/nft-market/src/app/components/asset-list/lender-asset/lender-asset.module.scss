@@ -1,0 +1,203 @@
+.assetBox {
+  width: calc(33.33% - 2em);
+  margin: 1em;
+  @media (max-width: 1200px) {
+    width: calc(50% - 2em);
+  }
+
+  & > a {
+    display: block;
+  }
+
+  a > div {
+    width: 100% !important;
+    position: relative;
+
+    &:before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 60%;
+      background-image: linear-gradient(
+          0deg,
+          rgba(0, 0, 0, 0.7) 0%,
+          rgba(0, 0, 0, 0) 100%
+      );
+      content: "";
+      z-index: 20;
+    }
+
+    video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .loanHeading {
+    font-size: 12px;
+    display: block !important;
+    width: 100%;
+    @media (max-width: 1400px) {
+      font-size: 10px;
+    }
+  }
+
+  .assetPrice {
+    font-weight: 400;
+    font-size: 20px;
+    @media (max-width: 1400px) {
+      font-size: 16px;
+    }
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  .loanIcon {
+    @media (max-width: 1400px) {
+      height: 15px !important;
+      width: 15px !important;
+    }
+  }
+
+  .interestElem {
+    text-align: right;
+    @media(max-width: 576px) {
+      text-align: left !important;
+    }
+  }
+
+  .assetPriceStable {
+    font-weight: 400;
+    font-size: 20px;
+    @media (max-width: 1400px) {
+      font-size: 16px;
+      img {
+        height: 15px !important;
+        width: 15px !important;
+      }
+    }
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+    @media (max-width: 480px) {
+      font-size: 12px;
+    }
+  }
+
+  .assetPriceStableFiat {
+    font-size: 12px;
+    @media (max-width: 1400px) {
+      font-size: 10px;
+    }
+    @media (max-width: 900px) {
+      font-size: 10px;
+    }
+    @media (max-width: 600px) {
+      font-size: 10px;
+    }
+  }
+
+  .assetSpecs {
+    position: relative;
+    margin-top: -80px;
+    z-index: 100;
+    padding: 0 30px;
+
+    @media (max-width: 1535px) {
+      padding: 0 20px;
+      margin-top: -70px;
+      margin-bottom: 0;
+    }
+    @media (max-width: 600px) {
+      padding: 0 20px;
+      margin-top: -60px;
+      margin-bottom: 0;
+    }
+
+    .termHeading {
+      font-size: 12px;
+      @media (max-width: 1400px) {
+        font-size: 10px;
+      }
+      @media (max-width: 900px) {
+        font-size: 10px;
+      }
+      @media (max-width: 600px) {
+        font-size: 10px;
+      }
+    }
+
+    .termValue {
+      font-weight: 400;
+      font-size: 16px;
+      color: #fff;
+      @media (max-width: 1400px) {
+        font-size: 15px;
+      }
+      @media (max-width: 900px) {
+        font-size: 13px;
+      }
+      @media (max-width: 600px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+  .moreButton {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    @media (max-width: 480px) {
+      margin-right: -10px !important;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+
+  .nft-status {
+    z-index: 1;
+    @media (max-width: 576px) {
+      margin-top: -10px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+.asset-loan-info  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  @media(max-width: 576px) {
+    flex-direction: column !important;
+  }
+}
+
+body[class*="darkTheme"] {
+  .moreButton {
+    color: #fff;
+    background: #000;
+  }
+
+  .loanHeading {
+    color: #929ba0 !important;
+  }
+}

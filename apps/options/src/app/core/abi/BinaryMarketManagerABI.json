@@ -1,0 +1,238 @@
+[
+  {
+    "inputs": [],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "creator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "oracle",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "vault",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "string",
+        "name": "pairName",
+        "type": "string"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "admin",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "address",
+        "name": "operator",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "minBetAmount",
+        "type": "uint256"
+      }
+    ],
+    "name": "MarketCreated",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "name": "allMarkets",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "market",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "pairName",
+        "type": "string"
+      },
+      {
+        "internalType": "bool",
+        "name": "enable",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "contract IOracle",
+        "name": "oracle_",
+        "type": "address"
+      },
+      {
+        "internalType": "contract IBinaryVault",
+        "name": "vault_",
+        "type": "address"
+      },
+      {
+        "internalType": "string",
+        "name": "marketName_",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "pairName_",
+        "type": "string"
+      },
+      {
+        "components": [
+          {
+            "internalType": "uint8",
+            "name": "id",
+            "type": "uint8"
+          },
+          {
+            "internalType": "uint256",
+            "name": "interval",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "intervalBlocks",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "bufferBlocks",
+            "type": "uint256"
+          }
+        ],
+        "internalType": "struct IBinaryMarket.TimeFrame[]",
+        "name": "timeframes_",
+        "type": "tuple[]"
+      },
+      {
+        "internalType": "address",
+        "name": "adminAddress_",
+        "type": "address"
+      },
+      {
+        "internalType": "address",
+        "name": "operatorAddress_",
+        "type": "address"
+      },
+      {
+        "internalType": "uint256",
+        "name": "minBetAmount_",
+        "type": "uint256"
+      }
+    ],
+    "name": "createMarket",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "pairName",
+        "type": "string"
+      }
+    ],
+    "name": "getMarketByPairName",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  }
+]

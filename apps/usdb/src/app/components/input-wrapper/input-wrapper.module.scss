@@ -1,0 +1,19 @@
+.inputWrapper {
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    input {
+        width: 100%;
+        color: inherit;
+        margin: 0 0 0 1em;
+    }
+
+    input, input:focus {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-size: 24px;
+    }
+}

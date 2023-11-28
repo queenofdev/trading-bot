@@ -1,0 +1,28 @@
+{
+  "root": "apps/usdb-e2e",
+  "sourceRoot": "apps/usdb-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/usdb-e2e/cypress.json",
+        "devServerTarget": "usdb:serve"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "usdb:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/usdb-e2e/**/*.{js,ts}"]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["usdb"]
+}

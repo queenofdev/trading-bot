@@ -1,0 +1,6 @@
+.storybook
+.vscode
+patches
+node_modules
+cache
+coverage

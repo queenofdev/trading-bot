@@ -1,0 +1,27 @@
+.line-border {
+  border: solid 2px #a6a9be;
+  border-radius: 15px;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-touched-outline {
+  border: solid 1px red;
+
+  &:hover {
+    border: solid 2px red;
+  }
+}
+
+.asset-token-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #8E95A3;
+  border-radius: 5px;
+}
+

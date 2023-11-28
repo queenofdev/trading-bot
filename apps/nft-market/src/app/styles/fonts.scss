@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100;300;400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+@mixin font-face ($family, $url) {
+    @font-face {
+        font-family: $family;
+        src: url($url);
+    }
+}
+
+@include font-face('MonumentExtended', '../../assets/fonts/MonumentExtended-Regular.otf');
+@include font-face('SequelBlack', '../../assets/fonts/Sequel100Black-55.ttf');

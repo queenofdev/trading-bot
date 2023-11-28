@@ -1,0 +1,91 @@
+.assetBox {
+  width: calc(33.33% - 2em);
+  margin: 1em;
+  @media (max-width: 1200px) {
+    width: calc(50% - 2em);
+  }
+
+  & > .assetImage {
+    display: block;
+  }
+
+  .assetImage > div {
+    width: 100% !important;
+    position: relative;
+
+    video {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      max-width: 100%;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .moreButton {
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    @media (max-width: 480px) {
+      margin-right: -10px !important;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+.nft-status {
+  @media (max-width: 576px) {
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.collectionName {
+  font-weight: 400;
+  font-size: 0.875em;
+  position: relative;
+  top: -54px;
+  background: #fff;
+  border-radius: 2em;
+  padding: 1em;
+  align-self: center;
+  text-align: center;
+  opacity: 0.9;
+  display: block;
+  max-width: 70%;
+  min-width: 130px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  @media (max-width: 576px) {
+    max-width: 90%;
+    min-width: 100px;
+    top: -40px;
+    font-size: 0.7rem;
+    padding: 0.5em;
+  }
+}
+
+body[class*="darkTheme"] {
+  .moreButton {
+    color: #fff;
+    background: #000;
+  }
+
+  .collectionName {
+    background: #000;
+    color: #fff;
+  }
+}

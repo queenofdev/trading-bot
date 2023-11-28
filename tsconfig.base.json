@@ -1,0 +1,32 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2021",
+    "module": "esnext",
+    "lib": ["ESNext", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "@fantohm/shared-helpers": ["libs/shared/helpers/src/index.ts"],
+      "@fantohm/shared-ui-themes": ["libs/shared/ui-themes/src/index.ts"],
+      "@fantohm/shared-web3": ["libs/shared/web3/src/index.ts"],
+      "@fantohm/shared/fetch-nft": ["libs/shared/fetch-nft/src/index.ts"],
+      "@fantohm/shared/images": ["libs/shared/images/src/index.ts"],
+      "@fantohm/shared/opensea": ["libs/shared/opensea/src/index.ts"],
+      "@fantohm/shared/ui-charts": ["libs/shared/ui-charts/src/index.ts"],
+      "@fantohm/shared/ui-components": ["libs/shared/ui-components/src/index.ts"],
+      "@fantohm/shared/ui-helpers": ["libs/shared/ui-helpers/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}

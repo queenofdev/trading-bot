@@ -1,0 +1,105 @@
+.iconGridItem {
+  margin-bottom: 25px;
+}
+
+.investmentElem {
+
+  line-height:30px;
+
+  h1 {margin:0 !important;}
+  h1[class*=_title] {
+    font-weight:400;
+    font-size:32px;
+    line-height:40px;
+    margin:0;
+    width:100%;
+    margin-bottom:25px !important;
+  }
+  button {margin-left:0 !important;
+  box-shadow: none;
+  margin-top:25px !important;
+  }
+
+  img {margin-left:-50px;height:auto !important;width:150px !important;margin-bottom:-30px;}
+  div[class*=_iconLinkContainer] {
+    padding:0 30px 30px 30px;
+  }
+
+}
+
+
+
+  .productGrid {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    @media (max-width:1200px) {
+      margin-top:150px !important;
+      margin-bottom:50px !important;
+    }
+    @media (max-width:900px) {
+      margin-top:30px !important;
+      margin-bottom:50px !important;
+    }
+}
+
+.iconLinkContainer {
+  display: block;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
+  @media (max-width:600px) {
+    width: 100%;
+  }
+
+  .iconImage {
+    width: 50%;
+    @media (max-width: 200px) {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .title {
+    width: 100%;
+    margin-left: 20px;
+    font-size: 20px;
+    text-align: center;
+    @media (max-width: 600px) {
+      margin-left: 100%;
+    }
+    @media (max-width: 200px) {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .text {
+    width: 80%;
+    margin-left: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    @media (max-width: 150px) {
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      margin-left: 10%;
+    }
+  }
+
+
+  .link {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-left: 20px;
+    font-weight: 400;
+    background: #00000000;
+    color: #000000;
+    border: 1px solid #000000;
+  }
+
+  .linkArrow {
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+
+}

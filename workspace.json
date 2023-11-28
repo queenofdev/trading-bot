@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "projects": {
+    "balance": "apps/balance",
+    "nft-market": "apps/nft-market",
+    "nft-market-e2e": "apps/nft-market-e2e",
+    "options": "apps/options",
+    "options-e2e": "apps/options-e2e",
+    "shared-fetch-nft": "libs/shared/fetch-nft",
+    "shared-helpers": "libs/shared/helpers",
+    "shared-images": "libs/shared/images",
+    "shared-ui-charts": "libs/shared/ui-charts",
+    "shared-ui-themes": "libs/shared/ui-themes",
+    "shared-web3": "libs/shared/web3",
+    "usdb": "apps/usdb",
+    "usdb-e2e": "apps/usdb-e2e"
+  }
+}

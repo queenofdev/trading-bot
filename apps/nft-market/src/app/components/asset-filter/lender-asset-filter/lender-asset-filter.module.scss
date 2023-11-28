@@ -1,0 +1,42 @@
+
+
+.sortList {
+    fieldset {
+        border:0 !important;
+    }
+    svg {
+        margin-right:10px;
+    }
+    @media (max-width:1200px) {
+        font-size:12px !important;
+        padding-left:10px !important;
+    }
+}
+
+.minValueField, .maxValueField {
+   flex: 0 0 50%;
+   max-width:50%;
+    margin-top:7px !important;
+   span {
+       display:block;
+       font-size:10px;
+   }
+}
+.minValueField {
+    text-align:left;
+    margin-left:-10px !important;
+}
+
+.maxValueField {
+    text-align:right;
+
+    margin-right:-10px !important;
+}
+body[class*=darkTheme] {
+    .sortList {
+        border-color: rgba(255,255,255,0.2) !important;
+        svg {
+            color:#fff;
+        }
+    }
+}

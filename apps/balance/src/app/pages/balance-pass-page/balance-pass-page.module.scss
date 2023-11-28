@@ -1,0 +1,124 @@
+@font-face {
+  font-family: MonumentExtendedRegular;
+  src: url("../../../assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+
+.passContainer {
+  background-color: black;
+  @media (max-width: 1200px) {
+    height: auto !important;
+  }
+  @media (min-width: 1200px) {
+    max-width: auto !important;
+  }
+}
+
+.heroTitle {
+  @media (max-width: 1872px) {
+    font-size: 42px !important;
+  }
+  @media (max-width: 1745px) {
+    font-size: 40px !important;
+  }
+  @media (max-width: 1650px) {
+    font-size: 36px !important;
+  }
+  @media (max-width: 1500px) {
+    font-size: 30px !important;
+  }
+  @media (max-width: 1250px) {
+    font-size: 26px !important;
+  }
+  @media (max-width: 1105px) {
+    font-size: 20px !important;
+  }
+  @media (max-width: 900px) {
+    font-size: 22px !important;
+  }
+}
+.heroDescription {
+  @media (max-width: 600px) {
+    width: 92% !important;
+  }
+}
+.heroLink {
+  @media (max-width: 1240px) {
+    font-size: 12px !important;
+  }
+  @media (max-width: 600px) {
+    width: 50% !important;
+    margin-top: 30px !important;
+  }
+}
+.footerLink {
+  @media (max-width: 1240px) {
+    font-size: 12px !important;
+  }
+  @media (max-width: 600px) {
+    width: 50% !important;
+    margin-top: 30px !important;
+  }
+}
+.heroTitleDivSection {
+  @media (max-width: 600px) {
+    width: 100% !important;
+  }
+}
+.heroTitleDivSection1 {
+  @media (max-width: 600px) {
+    width: 91% !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 4%;
+  }
+}
+.nftHolderDes {
+  font-family: "sora" !important;
+  color: #8a99a8;
+
+  @media (max-width: 600px) {
+    width: 92% !important;
+  }
+}
+.heroImageSection {
+  @media (max-width: 600px) {
+    margin-top: 50px !important;
+  }
+}
+.nftPassSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150px;
+  width: 100%;
+}
+.balanceLiqdLogoDiv {
+  @media (max-width: 600px) {
+    width: 261px;
+    height: 35px;
+  }
+}
+.balanceLiqdDes {
+  @media (max-width: 600px) {
+    width: 355px !important;
+  }
+}
+.nftPassInfoSection {
+  @media (max-width: 600px) {
+    margin-left: 0px !important;
+    margin-top: 50px !important;
+  }
+}
+.nftPassTotal {
+  @media (max-width: 600px) {
+    margin-top: 0px !important;
+  }
+}
+.FooterTitle {
+  @media (max-width: 600px) {
+    font-size: 17px !important;
+  }
+}

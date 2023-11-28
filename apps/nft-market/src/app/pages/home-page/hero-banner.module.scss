@@ -1,0 +1,15 @@
+.bgImgWidth {
+  @media (min-width: 1201px) {
+    width: calc(100% + 200px) !important;
+  }
+  @media (max-width: 1200px) {
+    top: -166px !important;
+    width: calc(100% + 150px) !important;
+  }
+  @media (max-width: 900px) {
+    width: calc(100% + 125px) !important;
+  }
+  @media (max-width: 480px) {
+    width: calc(100% + 107px) !important;
+  }
+}

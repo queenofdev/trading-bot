@@ -1,0 +1,103 @@
+.iconGridItem {
+  margin-bottom: 25px;
+}
+
+.productGrid {
+  align-items: center;
+}
+
+@media (max-width:1200px) {
+
+  .productGrid {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+  }
+}
+@media (max-width:600px) {
+
+  .productGrid {
+    width: 60%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+  }
+}
+  .title {
+    width: 70%;
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 50px;
+
+    @media (max-width: 900px) {
+      margin-left:30px;
+    }
+  }
+
+  .text {
+    width: 80%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+
+    @media (max-width: 900px) {
+      margin-left:30px;
+    }
+  }
+
+  .partnerForm {
+    display:flex;
+    flex-flow:wrap;
+    flex-direction: row !important;
+
+ 
+.styledInput {
+  border-radius: 30px !important;
+  height: 60px;
+  font-size: 11px !important;
+  padding-left:1.5em !important;
+  padding-right:1em;
+  margin-top:20px;
+flex:0 0 calc(50% - 20px);
+max-width: calc(50% - 20px);
+margin:10px;
+
+  @media (max-width:1200px) {
+    flex:0 0 100%;
+max-width: 100%;
+margin:10px 0;
+
+  }
+  
+}
+@media (max-width:900px) {
+  padding:0 30px;
+  margin-top:50px;
+}
+}
+.link {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 20px;
+  font-weight: 400;
+  background: #00000000;
+  color: #000000;
+  border: 1px solid #000000;
+}
+
+
+body[class=darkTheme] {
+.defineImg {
+  img {filter:invert(1) grayscale(1) brightness(2);}
+}
+}

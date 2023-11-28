@@ -1,0 +1,31 @@
+.hero {
+  .rowCard {
+    .subTitle {
+      color: #929ba0;
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+    }
+    .infoIcon {
+      width: 17px;
+      height: 17px;
+      margin-left: 5px;
+    }
+  }
+  .leftEdge {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+  .rightEdge {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+
+.confirmation-modal {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  maxWidth: 500px;
+}

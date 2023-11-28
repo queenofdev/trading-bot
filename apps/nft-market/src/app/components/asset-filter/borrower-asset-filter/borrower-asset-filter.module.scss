@@ -1,0 +1,21 @@
+.sortList {
+    fieldset {
+        border:0 !important;
+    }
+    svg {
+        margin-right:10px;
+    }
+    @media (max-width:1200px) {
+        font-size:12px !important;
+        padding-left:10px !important;
+    }
+}
+
+body[class*=darkTheme] {
+    .sortList {
+        border-color: rgba(255,255,255,0.2) !important;
+        svg {
+            color:#fff;
+        }
+    }
+}

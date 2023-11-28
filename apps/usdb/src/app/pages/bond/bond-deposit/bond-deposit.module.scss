@@ -1,0 +1,23 @@
+.depositAmountBox {
+    padding: 1em;
+    border: 2px solid #FFF;
+    border-radius: 1.5em;
+
+    input {
+        border: none;
+        background-color: transparent;
+        font-size: inherit;
+        color: inherit;
+        max-width: 75%
+    }
+
+    input:focus {
+        outline: none;
+    }
+}
+
+.depositTokenSelectorBox {
+    padding: 0.5em;
+    border: 2px solid rgb(92, 92, 92);
+    border-radius: 1.5em;
+}

@@ -1,0 +1,81 @@
+.paperContainer {
+  padding: 2em;
+}
+
+.selectRadio {
+  button {
+    border: none;
+  }
+}
+
+.infoBlock {
+  background-color: #1a2323;
+  color: #5b918d;
+  border-radius: 1.5em;
+  padding: 1.5em 2.5em;
+  .MuiSvgIcon-root {
+    margin-right: 1em;
+  }
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+
+h2 {
+  margin: 0.25em 1em;
+}
+
+// .MuiButton-root {
+//   width: 100%;
+//   color: #000;
+//   background-color: #FFF;
+//   font-size: 125%;
+//   padding: 1.5em;
+//   border-radius: 1.75em;
+//   font-weight: 700;
+// }
+
+// .MuiButton-root:hover {
+//   background-color: rgb(219, 219, 219);
+//   color: #000;
+// }
+
+.bondView {
+
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .MuiBackdrop-root {
+      background: rgba(100, 100, 100, 0.1) !important;
+      backdrop-filter: blur(33px) !important;
+      -webkit-backdrop-filter: blur(33px) !important;
+      .ohm-card {
+        opacity: 1 !important;
+        height: auto;
+      }
+    }
+    .ohm-modal {
+      max-width: 688px;
+      min-height: 605px;
+    }
+  }
+
+  /* slightly transparent fallback for Firefox (not supporting backdrop-filter) */
+  @supports not ((-webkit-backdrop-filter: none) or (backdrop-filter: none)) {
+    .MuiBackdrop-root {
+      background: rgba(100, 100, 100, 0.95);
+      .ohm-card {
+        height: auto;
+      }
+    }
+    .ohm-modal {
+      max-width: 688px;
+      min-height: 605px;
+      opacity: 0.9;
+    }
+  }
+  .ohm-card {
+    max-width: 803px;
+  }
+
+}

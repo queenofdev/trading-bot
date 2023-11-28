@@ -1,0 +1,58 @@
+{
+  "root": true,
+  "ignorePatterns": ["**/*"],
+  "extends": ["prettier", "plugin:node/recommended"],
+  "plugins": ["@nrwl/nx", "@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "import/prefer-default-export": "off",
+    "prefer-destructuring": "off",
+    "prefer-template": "off",
+    "react/prop-types": "off",
+    "react/destructuring-assignment": "off",
+    "no-console": "off",
+    "jsx-a11y/accessible-emoji": ["off"],
+    "jsx-a11y/click-events-have-key-events": ["off"],
+    "jsx-a11y/no-static-element-interactions": ["off"],
+    "no-underscore-dangle": "off",
+    "no-nested-ternary": "off",
+    "no-restricted-syntax": "off",
+    "no-plusplus": "off",
+    "comma-dangle": ["warn", "only-multiline"],
+    "quotes": ["error", "double"],
+    "node/no-unpublished-import": "off",
+    "node/no-missing-import": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "node/no-unpublished-require": ["warn"]
+  },
+  "parser": "@typescript-eslint/parser",
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "@nrwl/nx/enforce-module-boundaries": [
+          "error",
+          {
+            "enforceBuildableLibDependency": true,
+            "allow": [],
+            "depConstraints": [
+              {
+                "sourceTag": "*",
+                "onlyDependOnLibsWithTags": ["*"]
+              }
+            ]
+          }
+        ],
+        "node/no-unsupported-features/es-syntax": ["error", { "ignores": ["modules"] }]
+      }
+    },
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": ["plugin:@nrwl/nx/typescript"]
+    },
+    {
+      "files": ["*.js", "*.jsx"],
+      "extends": ["plugin:@nrwl/nx/javascript"]
+    }
+  ]
+}

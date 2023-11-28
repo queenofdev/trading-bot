@@ -1,0 +1,9 @@
+export { ReactComponent as ArbitrumIcon } from "./arbitrum_icon.svg";
+export { ReactComponent as AvalancheIcon } from "./avalanche_icon.svg";
+export { ReactComponent as BscIcon } from "./bsc_icon.svg";
+export { ReactComponent as EthereumIcon } from "./ethereum_icon.svg";
+export { ReactComponent as FantomIcon } from "./fantom_icon.svg";
+export { ReactComponent as HarmonyIcon } from "./harmony_icon.svg";
+export { ReactComponent as MoonBaseAlphaIcon } from "./moonbase_alpha_icon.svg";
+export { ReactComponent as MoonriverIcon } from "./moonriver_icon.svg";
+export { ReactComponent as RinkebyIcon } from "./rinkeby_icon.svg";

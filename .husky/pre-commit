@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# nx run-many --all --target=lint
+#nx run-many --projects=shared-helpers,shared-images,shared-ui-themes,usdb,nft-market --target=lint

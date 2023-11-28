@@ -1,0 +1,15 @@
+.ownerName {
+    font-size: 1rem;
+}
+
+.ownerAddress {
+    font-size: 0.875rem;
+    color: #8991A2;
+}
+
+
+body[class*=darkTheme] {
+    .ownerName {
+        color: #374FFF
+    }
+}

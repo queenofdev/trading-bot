@@ -1,0 +1,37 @@
+.valueContainer {
+    border-radius: 1em;
+    background: #f9f9f9;
+    padding: 1em;
+
+    .leftSide {
+        border-right: 2px solid #aaaaaa;
+        width: 25%;
+    }
+    .rightSide {
+        padding-left: 1em;
+        width:75%;
+        .amountField {
+            margin-left:auto;
+            text-align:right;
+            color:#aaa;
+        }
+    }
+
+}
+.inputHelper {
+    font-size:0.875em;
+    color:#aaa;
+}
+body[class*=darkTheme] {
+    .makeOfferForm {
+        .valueContainer {
+            background:#111;
+            svg {
+                fill: #fff;
+            }
+        }
+    }
+    .inputHelper {
+        color:#aaa;
+    }
+}

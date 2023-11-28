@@ -1,0 +1,15 @@
+.imgContainer {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}

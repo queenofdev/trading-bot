@@ -1,0 +1,110 @@
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  font-family: "Sora", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.change a:visited {
+  color: rgb(90, 202, 230) !important;
+}
+body[class="lightTheme"] {
+  background-color: white !important;
+}
+
+.flexCenterRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCenterCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexSBRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flexSBCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.h100 {
+  height: 100%;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-bolder {
+  font-weight: bolder;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.embed-container {
+  width: 80vw;
+  height: calc(80vw * 0.5625);
+  margin: 5em auto 5em auto;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  width: 100%;
+  height: 100%;
+}
+
+/* experimental animated gradient background
+body {
+    background: radial-gradient(ellipse at top, #492e9554, transparent),
+    radial-gradient(ellipse at bottom, #379d8f52, transparent);
+    background-size: 150% 150%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+*/

@@ -1,0 +1,34 @@
+.progress-ring {
+  
+}
+
+.progressCircle {
+    stroke: #5731c3;
+    stroke-width: 5px;
+    transition: 0.7s stroke-dashoffset;
+    // axis compensation
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+    fill: none;
+}
+
+.baseCircle {
+    stroke: #1b9385;
+    stroke-width: 5px;
+    fill: none;
+}
+
+.cls-1,.cls-2{
+    fill: none;
+}
+.cls-1{
+    stroke:#231f20;
+    stroke-width:4px;
+}
+.cls-1,.cls-3{
+    stroke-miterlimit:10;
+}.cls-3{
+    fill:none;
+    stroke:#dd2426;
+    stroke-dasharray:11.65 11.65;
+}

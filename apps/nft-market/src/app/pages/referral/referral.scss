@@ -1,0 +1,17 @@
+.referral-link .MuiInput-underline.Mui-disabled:before {
+  border: none;
+}
+
+.referral-wrapper .referral-link-paper {
+  width: 100%;
+}
+.nft-image {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 767px) {
+  .referral-wrapper .referral-link-paper {
+    width: 80%;
+  }
+}

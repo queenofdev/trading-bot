@@ -1,0 +1,29 @@
+.splitter {
+  background-image: url("apps/usdb/src/assets/images/footer-splitter.png");
+  background-size: cover;
+  width: 100%;
+  height: 5px;
+}
+
+.footerBar {
+  position:relative;
+  margin-top:50px !important;
+  &:before {
+    content:'';
+    z-index:1;
+    background-image:
+    linear-gradient(90deg, #1B9385 0%, #5731C3 100%);
+    background-size:100% 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    opacity:1;
+    height:4px;
+}
+}
+.socialDiv {
+  width: 29px;
+  height: 22px;
+  margin-left: 25px;
+}

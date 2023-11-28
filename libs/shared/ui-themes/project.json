@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/ui-themes",
+  "sourceRoot": "libs/shared/ui-themes/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/ui-themes/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/ui-themes"],
+      "options": {
+        "jestConfig": "libs/shared/ui-themes/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

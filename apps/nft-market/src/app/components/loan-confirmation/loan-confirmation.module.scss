@@ -1,0 +1,19 @@
+.dialogContainer {
+    div[class*=Backdrop] {
+        backdrop-filter: blur(5px);
+    }
+}
+
+.repayDate {color:#000 !important; font-weight:400;}
+body[class*=darkTheme] {
+    .repayDate {color:#fff !important;}
+
+    .dialogContainer {
+        div[class*=Paper-root] {
+            background:#222;
+            svg {
+                fill:#fff;
+            }
+        }
+    }
+}

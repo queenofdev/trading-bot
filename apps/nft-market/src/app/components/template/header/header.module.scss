@@ -1,0 +1,284 @@
+body {
+  &:before {
+    content: "";
+    z-index: -1;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.3;
+  }
+}
+
+.comingSoonTitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: #697780;
+}
+
+.comingSoonSubtitle {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(106, 120, 129, 0.29);
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.connectButton {
+  font-size: 0.8em !important;
+  padding-top: 1.2em !important;
+  padding-bottom: 1.2em !important;
+}
+
+.toggleTheme {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  width: 40px !important;
+  min-width: 0 !important;
+  svg {
+    font-size: 1em;
+  }
+}
+.portfolio {
+  padding-top: 1em !important;
+  padding-bottom: 1em !important;
+  font-size: 0.8em !important;
+  svg {
+    font-size: 1.25em;
+  }
+}
+
+.usdbLogo {
+  @media (max-width: 600px) {
+    background-color: red;
+    height: 60px;
+    width: auto;
+  }
+  @media (max-width: 360px) {
+    height: 40px;
+    width: auto;
+  }
+}
+.errorNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  padding: 7px;
+}
+.navWrap {
+  @media (max-width: 900px) {
+    ul {
+      max-width: 300px;
+      display: flex;
+      flex-flow: wrap;
+      a {
+        order: 10;
+        flex: 0 0 100%;
+      }
+      li {
+        order: 1;
+        flex: 0 0 76%;
+        &.mobilePortfolio {
+          text-align: left;
+          .portfolioText {
+            display: none;
+          }
+          p,
+          a {
+            display: block;
+            width: 100%;
+          }
+          button {
+            justify-content: flex-start;
+            width: 100%;
+          }
+        }
+        &.mobileTheme {
+          order: 2;
+          flex: 0 0 24%;
+          justify-content: flex-end;
+        }
+        &.mobileConnect {
+          order: 20;
+          flex: 0 0 100%;
+
+          a {
+            display: block;
+            width: 100%;
+          }
+          p {
+            margin: 0 auto;
+            display: block;
+            width: 100%;
+            button {
+              border-width: 1px;
+              background: #000;
+              color: #fff;
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.accountButton {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border: 1px solid #8080801f !important;
+}
+@media (max-width: 1200px) {
+  .accountButton {
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+  .mainLogo {
+    img {
+      width: 100%;
+      height: auto;
+    }
+    a {
+      display: flex;
+    }
+  }
+  .accountButton {
+    font-size: 12px !important;
+    img {
+      height: 30px;
+      width: auto;
+      margin-right: 5px;
+      border-radius: 50px;
+    }
+  }
+  .notificationIcon {
+    svg {
+      height: 28px;
+      width: auto;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .accountButton {
+    font-size: 14px !important;
+  }
+  .notificationIcon {
+    svg {
+      height: 28px;
+      width: auto;
+    }
+  }
+  .mainLogo {
+    img {
+      width: 100px;
+      height: auto !important;
+    }
+  }
+}
+@media (max-width: 560px) {
+  .accountButton {
+    font-size: 12px !important;
+    img {
+      height: 25px;
+    }
+  }
+  .notificationIcon {
+    svg {
+      height: 24px;
+      width: auto;
+    }
+  }
+  .mainLogo {
+    img {
+      width: 70px;
+      height: auto !important;
+    }
+  }
+}
+@media (max-width: 440px) {
+  .accountButton {
+    font-size: 11px !important;
+    img {
+      height: 22px;
+    }
+  }
+  .notificationIcon {
+    svg {
+      height: 22px;
+      width: auto;
+    }
+  }
+  .mainLogo {
+    img {
+      width: 55px;
+      height: auto !important;
+    }
+  }
+  .accountAvatar {
+    display: none !important;
+  }
+}
+body[class*="darkTheme"] {
+  .addressSvg {
+    color: #fff;
+  }
+  .notificationIcon,
+  .accountButton {
+    background: #222;
+    svg {
+      color: #fff;
+    }
+  }
+}
+
+.buyLink {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  border-bottom: 1px solid #88888888;
+
+  > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 2rem;
+  }
+
+  > img {
+    width: 12px;
+    height: 12px;
+  }
+
+  > span > img {
+    height: fit-content;
+    margin-right: 0.5rem;
+  }
+}
+
+.buyLink:hover {
+  span {
+    color: blue;
+  }
+
+  > img {
+    filter: invert(8%) sepia(96%) saturate(7339%) hue-rotate(247deg) brightness(105%)
+      contrast(140%);
+    // filter: invert(92%) sepia(96%) saturate(7339%) hue-rotate(247deg) brightness(105%)
+    //   contrast(140%);
+  }
+}
+
+body[class*="darkTheme"] {
+  .buyLink:hover {
+    > img {
+      filter: invert(92%) sepia(96%) saturate(7339%) hue-rotate(247deg) brightness(105%)
+        contrast(140%);
+    }
+  }
+}

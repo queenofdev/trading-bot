@@ -1,0 +1,10 @@
+body[class*=darkTheme] {
+  .filterElems {
+    button {
+      filter: invert(1);
+      color: black;
+      border-color: black;
+      background-color: white;
+    }
+  }
+}

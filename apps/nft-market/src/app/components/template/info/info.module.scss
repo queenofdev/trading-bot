@@ -1,0 +1,41 @@
+.dialogContainer {
+    div[class*=Backdrop] {
+        backdrop-filter: blur(5px);
+    }
+}
+
+.dialogBody {
+    div[class*=paper] {
+        width: 600px;
+        padding-left: 0;
+        padding-right: 0;    
+    }
+}
+
+.inputBox {
+    height: 50px;
+    border: 1px solid rgba(222, 222, 222, 0.7);
+    border-radius: 12px;
+    margin: 10px 0 6px 0;
+    font-size: 18px;
+    padding: 0 12px;
+}
+
+.title {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.repayDate {color:#000 !important; font-weight:400;}
+body[class*=darkTheme] {
+    .repayDate {color:#fff !important;}
+
+    .dialogContainer {
+        div[class*=Paper-root] {
+            background:#222;
+            svg {
+                fill:#fff;
+            }
+        }
+    }
+}

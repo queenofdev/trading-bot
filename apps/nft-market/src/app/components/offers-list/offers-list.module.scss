@@ -1,0 +1,50 @@
+.title {
+    margin: 0;
+}
+.offersHead {
+    font-size:0.875rem !important;
+    color:#8991A2 !important;
+    padding-bottom:0 !important;
+}
+.offerElem {
+    font-size:1rem !important;
+    padding:0 !important;
+}
+.offerName {
+    color:#f00 !important;
+}
+.row {
+    padding-left: 50px !important;
+    td:first-child {
+        padding-left: 1rem !important;
+    }
+    td:last-child {
+        float: right;
+        div {
+            div {
+                span {width:150px;text-align:center;}
+            }
+        }
+    } 
+}
+h2+table {
+    
+    border-spacing: 0 1em !important;
+}
+
+
+.offerContainer {
+    margin-top: 1em;
+    padding: 4em 0;
+    padding-top: 0em;
+    border-top: 2px solid #eee;
+    border-bottom: 2px solid #eee;
+}
+
+body[class*=darkTheme] {
+    .offerContainer {
+        border-top: 2px solid #444;
+        border-bottom: 2px solid #444;
+    }
+
+}

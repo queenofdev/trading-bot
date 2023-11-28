@@ -1,0 +1,99 @@
+.daiAPR {
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0;
+
+    @media (max-width:600px) {
+        font-size:36px;
+    }
+    @media (max-width:420px) {
+        font-size:30px;
+    }
+}
+
+.tvlInfo {
+    color: #697780;
+    font-size: 21;
+    font-weight: 400;
+    @media (max-width:600px) {
+        font-size:13px;
+        display:block;
+    }
+    
+}
+
+%section {
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+.daiIcon {
+    img {
+        height:60px;
+        @media (max-width:600px) {
+            height:50px;
+        }
+    }
+}
+.__heading {
+    @extend %section;
+    
+  padding: 19vmin 5vw 4vmin 5vw;
+
+}
+.depositBox {margin-top:30px;}
+
+.__section {
+    @extend %section;
+    padding: 5vmin 5vw 0 5vw;
+}
+
+.__icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: auto;
+
+    > * {
+        width: 16rem;
+    }
+}
+
+@media (max-width:600px) {
+    .depositButton {width:100% !important; padding:1em 1em !important;}
+    .learnMore {width:100% !important;}
+    .buttonArea {flex-basis: 50% !important}
+}
+.bannerDiv {
+    width: 60%;
+    height: 30%;
+    margin-left: 20%;
+    border: 1px solid grey;
+    border-radius: 25px;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    @media (max-width: 600px) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+  .contentDiv {
+    padding: 30px 10%;
+  
+    @media (max-width: 600px) {
+      padding: 10px 10%;
+    }
+  }
+  .warningDiv {
+    @media (max-width: 600px) {
+      width: 30px;
+      height: 30px;
+    }
+  }
+  

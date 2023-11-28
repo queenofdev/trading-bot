@@ -1,0 +1,82 @@
+h1 {
+  font-weight: 500;
+}
+
+.imgContainer {
+  border-radius: 30px;
+  overflow: hidden;
+  margin-left: auto;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  video {
+    height: 100%;
+    width: 100%;
+  }
+
+  audio {
+    width: 100%;
+  }
+
+  iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+  }
+
+  model-viewer {
+    width: 100%;
+    min-height: 460px;
+    @media (max-width: 576px) {
+      min-height: 250px !important;
+    }
+  }
+}
+
+.assetRow {
+  margin-top: 50px !important;
+  @media (max-width: 576px) {
+    margin-top: 0 !important;
+  }
+}
+
+.moreButton {
+  color: #000 !important;
+  background: #fff !important;
+  box-shadow: 0 15px 30px #7e9aa92b;
+  @media (max-width: 480px) {
+    margin-right: -10px !important;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+body[class*=darkTheme] {
+  .moreButton {
+    color: #fff !important;
+    background: #000 !important;
+  }
+}
+
+.iframe {
+  width: 100%;
+  min-height: 500px;
+  @media (max-width: 576px) {
+    min-height: 300px !important;
+  }
+}
+
+.audio {
+  width: 100%;
+  background: transparent;
+}

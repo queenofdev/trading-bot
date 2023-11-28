@@ -1,0 +1,137 @@
+@media (max-width:1200px) {
+
+  .productGrid {
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+    img {width:400px !important;}
+
+  }
+}
+@media (max-width:600px) {
+
+  .productGrid {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+    img {width:320px !important;}
+  }
+}
+
+@media (max-width:900px) {
+  .productGrid {
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:center;
+    margin-bottom: 50px !important;
+
+  }
+}
+
+.iconLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  @media (max-width: 600px) {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .imageBox {
+    margin: 0 auto;
+    @media (max-width: 400px) {
+      height: 70px;
+    }
+  }
+
+  .iconImage {
+
+    width: 100%;
+    @media (max-width: 200px) {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .title {
+    width: 100%;
+    font-size: 40px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    align-items: start;
+    @media (max-width: 900px) {
+      width: 100%;
+      font-size: 30px;
+      align-items: center;
+    }
+  }
+
+
+
+  .image {
+    width: 100%;
+    @media (max-width: 900px) {
+      width: 200px !important;
+      height: 100px;
+    }
+  }
+
+  .text {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    align-items: start;
+    @media (max-width: 900px) {
+      font-size: 12px;
+
+      padding:0 30px !important;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      align-items: center;
+    }
+  }
+
+
+  .link {
+    font-size: 14px;
+    margin-top: 10px;
+    font-weight: 400;
+    background: #00000000;
+    border: 1px solid;
+    @media (max-width: 600px) {
+      margin-left: 5px;
+      margin-right: 5px;
+      padding:15px 20px;
+    }
+  }
+
+
+  .disabled {
+    color: rgba(105, 108, 128, 0.43);
+  }
+
+  .linkArrow {
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+}
+
+.iconLinkContainer {
+ 
+  @media (max-width:900px) {
+    align-items:center;
+  }
+}

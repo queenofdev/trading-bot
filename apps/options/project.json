@@ -1,0 +1,109 @@
+{
+  "root": "apps/options",
+  "sourceRoot": "apps/options/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": [
+        "{options.outputPath}"
+      ],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/options",
+        "index": "apps/options/src/index.html",
+        "baseHref": "/",
+        "main": "apps/options/src/main.tsx",
+        "polyfills": "apps/options/src/polyfills.ts",
+        "tsConfig": "apps/options/tsconfig.app.json",
+        "assets": [
+          "apps/options/src/favicon.ico",
+          "apps/options/src/assets",
+          "apps/options/src/manifest.json",
+          "apps/options/src/android-icon-36x36.png",
+          "apps/options/src/android-icon-48x48.png",
+          "apps/options/src/android-icon-72x72.png",
+          "apps/options/src/android-icon-96x96.png",
+          "apps/options/src/android-icon-144x144.png",
+          "apps/options/src/android-icon-192x192.png",
+          "apps/options/src/apple-icon-57x57.png",
+          "apps/options/src/apple-icon-60x60.png",
+          "apps/options/src/apple-icon-72x72.png",
+          "apps/options/src/apple-icon-76x76.png",
+          "apps/options/src/apple-icon-114x114.png",
+          "apps/options/src/apple-icon-120x120.png",
+          "apps/options/src/apple-icon-144x144.png",
+          "apps/options/src/apple-icon-152x152.png",
+          "apps/options/src/apple-icon-180x180.png",
+          "apps/options/src/apple-icon-precomposed.png",
+          "apps/options/src/apple-icon.png",
+          "apps/options/src/favicon-16x16.png",
+          "apps/options/src/favicon-32x32.png",
+          "apps/options/src/favicon-96x96.png",
+          "apps/options/src/ms-icon-70x70.png",
+          "apps/options/src/ms-icon-144x144.png",
+          "apps/options/src/ms-icon-150x150.png",
+          "apps/options/src/ms-icon-310x310.png",
+          "apps/options/src/browserconfig.xml"
+        ],
+        "styles": [
+          "apps/options/src/styles.scss"
+        ],
+        "scripts": [],
+        "webpackConfig": "apps/options/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/options/src/environments/environment.ts",
+              "with": "apps/options/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "options:build",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "options:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": [
+        "{options.outputFile}"
+      ],
+      "options": {
+        "lintFilePatterns": [
+          "apps/options/**/*.{ts,tsx,js,jsx}"
+        ]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": [
+        "coverage/apps/options"
+      ],
+      "options": {
+        "jestConfig": "apps/options/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

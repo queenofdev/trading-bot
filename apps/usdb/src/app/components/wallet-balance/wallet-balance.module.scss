@@ -1,0 +1,29 @@
+.currencySelector {
+    border: 2px solid rgba(105,108,128,0.2);
+    padding: 1em;
+    border-radius: 3em;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    max-width: 245px;
+    @media (max-width:900px) {
+        max-width:100%;
+    }
+    .name {
+        font-size: 15px;
+    }
+    .amount {
+        font-size: 13px;
+        color: #696C80;
+        text-align:left;
+    }
+    input {
+        width: 100%;
+    }
+    input, input:focus {
+        border: none;
+        background: transparent;
+        outline: none;
+    }
+}

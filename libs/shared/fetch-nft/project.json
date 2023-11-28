@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/fetch-nft",
+  "sourceRoot": "libs/shared/fetch-nft/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/fetch-nft/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/fetch-nft"],
+      "options": {
+        "jestConfig": "libs/shared/fetch-nft/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

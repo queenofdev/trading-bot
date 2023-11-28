@@ -1,0 +1,16 @@
+.secondary {
+    font-size: 80%;
+    color: #8991A2;
+}
+.progress-error {
+    background-color: rgba(126,154,169,0.21176470588235294 ) !important;
+    span {
+        background-color: #fb1868 !important;
+    }
+}
+.progress-info {
+    background-color: rgba(126,154,169,0.21176470588235294 ) !important;
+    span {
+        background-color: #374fff !important;
+    }
+}

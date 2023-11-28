@@ -1,0 +1,53 @@
+/* You can add global styles to this file, and also import other style files */
+/* For base styles (check out normalize.css) */
+@tailwind base;
+/* Simple reusable components provided by tailwind */
+@tailwind components;
+/* utility classes generated based on our tailwind.config.js */
+@tailwind utilities;
+
+@font-face {
+  font-family: OcrExtendedRegular;
+  src: url('/assets/fonts/Ocr-Extended-Regular.ttf');
+}
+@font-face {
+  font-family: InterBlack;
+  src: url('/assets/fonts/Inter-Black.ttf');
+}
+@font-face {
+  font-family: InterBold;
+  src: url('/assets/fonts/Inter-Bold.ttf');
+}
+@font-face {
+  font-family: InterExtraBold;
+  src: url('/assets/fonts/Inter-ExtraBold.ttf');
+}
+@font-face {
+  font-family: InterExtraLight;
+  src: url('/assets/fonts/Inter-ExtraLight.ttf');
+}
+@font-face {
+  font-family: InterLight;
+  src: url('/assets/fonts/Inter-Light.ttf');
+}
+@font-face {
+  font-family: InterMedium;
+  src: url('/assets/fonts/Inter-Medium.ttf');
+}
+@font-face {
+  font-family: InterRegular;
+  src: url('/assets/fonts/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: InterSemiBold;
+  src: url('/assets/fonts/Inter-SemiBold.ttf');
+}
+@font-face {
+  font-family: InterThin;
+  src: url('/assets/fonts/Inter-Thin.ttf');
+}
+@font-face {
+  font-family: InterVariableFont;
+  src: url('/assets/fonts/Inter-VariableFont_slnt.ttf');
+}
+

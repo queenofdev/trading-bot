@@ -1,0 +1,120 @@
+.iconGridItem {
+  margin-bottom: 25px;
+}
+
+@media (max-width:1200px) {
+
+  .productGrid {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+  }
+
+  .multisigGrid {
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+  }
+}
+@media (max-width:600px) {
+
+  .productGrid {
+    width: 60%;
+    margin-left: 0%;
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px !important;
+
+  }
+}
+.title {
+  width: 70%;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 50px;
+
+  @media (max-width: 200px) {
+    font-size: 16px;
+  }
+}
+
+.fhmtitle {
+  width: 70%;
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  text-align: center;
+
+  @media (max-width: 200px) {
+    font-size: 16px;
+  }
+}
+
+.fhmtext {
+  width: 50%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  text-align: center;
+
+  @media (max-width: 150px) {
+    font-size: 12px;
+  }
+}
+
+.text {
+  width: 80%;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+
+  @media (max-width: 150px) {
+    font-size: 12px;
+  }
+}
+
+.styledInput {
+  border-radius: 30px !important;
+  height: 60px;
+  font-size: small;
+  width:90% !important;
+  max-width:100%;
+  margin-left: 1em;
+  padding-left:1.5em !important;
+  padding-right:1em;
+  margin-top:20px;
+  @media (max-width:600px) {
+    width:90%;
+    align-self: center;
+    margin-left: 1em;
+
+  }
+}
+
+.link {
+  font-size: 14px;
+  margin-top: 10px;
+  font-weight: 400;
+  background: #00000000;
+  color: #00000000;
+  border: 1px solid #000000;
+  @media (max-width: 600px) {
+    margin-right: 5%;
+  }
+}

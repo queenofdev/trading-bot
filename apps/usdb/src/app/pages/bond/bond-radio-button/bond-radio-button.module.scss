@@ -1,0 +1,41 @@
+.bondRadioButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #868e93;
+    margin: 1em;
+    cursor: pointer;
+    
+    padding: 0.75em;
+    
+
+    .bondRadioButton-button {
+        border-radius: 1em;
+        border: 2px solid #868e93;
+        background-color: #868e93;
+        height: 1em;
+        width: 1em;
+        display: block;
+        padding: 0;
+    }
+
+    .bondRadioButton-button.active {
+        background-color: #5b918d;
+        border: 2px solid #5b918d;
+        background-color: #5b918d;
+    }
+
+    .active {
+        color: #e2e9e2;
+    }
+
+    .bondRadioButton-label {
+        margin-left: 0.75em;
+    }
+}
+
+.bondRadioButtonContainer.active {
+    border-top-left-radius: 1.5em;
+    border-bottom-left-radius: 1.5em;
+    background: linear-gradient(90deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+}

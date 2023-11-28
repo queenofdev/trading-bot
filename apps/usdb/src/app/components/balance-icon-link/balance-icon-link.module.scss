@@ -1,0 +1,66 @@
+.iconLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+
+  .imageBox {
+    margin: 0 auto;
+    @media (max-width: 400px) {
+      height: 70px;
+    }
+  }
+
+  .iconImage {
+
+    width: 100%;
+    @media (max-width: 200px) {
+      width: 70px;
+      height: auto;
+    }
+  }
+  .title {
+    width: 50%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    @media (max-width: 200px) {
+      font-size: 16px;
+    }
+  }
+
+  .text {
+    width: 80%;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    @media (max-width: 150px) {
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+
+  .link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6dc1b9;
+    margin-top: 0;
+    @media (max-width: 600px) {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+
+  .disabled {
+    color: rgba(105, 108, 128, 0.43);
+  }
+
+  .linkArrow {
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+}

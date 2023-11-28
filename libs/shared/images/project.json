@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/images",
+  "sourceRoot": "libs/shared/images/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/images/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/images"],
+      "options": {
+        "jestConfig": "libs/shared/images/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

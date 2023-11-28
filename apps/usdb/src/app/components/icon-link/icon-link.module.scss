@@ -1,0 +1,45 @@
+.iconLinkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .imageBox {
+    margin: 0 auto;
+    @media (max-width: 400px) {
+      height: 70px;
+    }
+    .iconImage {
+      width: 100%;
+      @media (max-width: 400px) {
+        width: 70px;
+        height: auto;
+      }
+    }
+  }
+
+  .title {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
+  }
+
+  .link {
+    font-size: 14px;
+    font-weight: 400;
+    color: #6dc1b9;
+    margin-top: 0;
+  }
+
+  .disabled {
+    color: rgba(105, 108, 128, 0.43);
+  }
+
+  .linkArrow {
+    transform: rotate(90deg);
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "extends": ["plugin:@nrwl/nx/react", "../../.eslintrc.json"],
+  "ignorePatterns": ["!**/*"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "rules": {
+        "node/no-unsupported-features/es-syntax": [
+          "error",
+          { "ignores": ["modules"] }
+        ],
+        "node/no-extraneous-import": ["error", {
+          "allowModules": ["react-circular-progressbar"],
+          "resolvePaths": [],
+          "tryExtensions": []
+      }]
+      }
+    }
+  ]
+}

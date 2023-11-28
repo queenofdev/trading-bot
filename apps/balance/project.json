@@ -1,0 +1,84 @@
+{
+  "root": "apps/balance",
+  "sourceRoot": "apps/balance/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/balance",
+        "index": "apps/balance/src/index.html",
+        "baseHref": "/",
+        "main": "apps/balance/src/main.tsx",
+        "polyfills": "apps/balance/src/polyfills.ts",
+        "tsConfig": "apps/balance/tsconfig.app.json",
+        "assets": [
+          "apps/balance/src/assets",
+          "apps/balance/src/android-chrome-192x192.png",
+          "apps/balance/src/android-chrome-256x256.png",
+          "apps/balance/src/apple-touch-icon.png",
+          "apps/balance/src/browserconfig.xml",
+          "apps/balance/src/favicon.ico",
+          "apps/balance/src/favicon-16x16.png",
+          "apps/balance/src/favicon-32x32.png",
+          "apps/balance/src/mstile-150x150.png",
+          "apps/balance/src/safari-pinned-tab.svg",
+          "apps/balance/src/site.webmanifest",
+          "apps/balance/src/robots.txt",
+          "apps/balance/src/sitemap.xml"
+        ],
+        "styles": ["apps/balance/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "apps/balance/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/balance/src/environments/environment.ts",
+              "with": "apps/balance/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "balance:build:development",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "balance:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/balance/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/balance"],
+      "options": {
+        "jestConfig": "apps/balance/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

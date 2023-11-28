@@ -1,0 +1,197 @@
+.iconWrapper {
+  position: absolute;
+}
+
+.daiIcon {
+  position: relative;
+  height: 95px;
+  top: -36px;
+}
+
+.heroContainer {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.titleWrapper {
+  background-color: #000;
+  border-radius: 2em;
+  color: #fff;
+
+  font-size: 13px;
+  @media (max-width: 900px) {
+    font-size: 12px;
+  }
+  @media (max-width: 600px) {
+    font-size: 10px;
+  }
+}
+
+.iconsElement {
+  padding-right: 16px;
+}
+.imageSymbol {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  border-radius: 2em;
+  width: 100%;
+}
+
+.blogPost {
+  margin: 0 !important;
+  border-radius: 30px;
+  overflow: hidden;
+  cursor: pointer;
+
+  @media (max-width: 1200px) {
+    // padding:15px !important;
+  }
+  @media (max-width: 600px) {
+    // padding:10px 5px !important;
+  }
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.9);
+  }
+  & > div {
+    margin-left: 0;
+    margin-top: 0;
+
+    div:nth-child(1) {
+      position: relative;
+      padding: 0;
+      text-align: center;
+      width: auto;
+      max-width: unset;
+      z-index: 50;
+      overflow: unset !important;
+      border-radius: 25px;
+      padding: 30px 0;
+      margin-bottom: 30px;
+      img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        width: auto;
+        max-width: 100%;
+      }
+
+      div {
+        position: absolute;
+        bottom: -10px;
+        left: 15px;
+        right: 30px;
+        width: 150px;
+        text-align: center;
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
+        @media (max-width: 600px) {
+          width: 100px;
+        }
+      }
+    }
+    h1 {
+      @media (max-width: 600px) {
+        font-size: 13px !important;
+      }
+    }
+    h2 {
+      @media (max-width: 600px) {
+        font-size: 12px !important;
+      }
+      @media (max-width: 420px) {
+        font-size: 11px !important;
+      }
+    }
+    div:last-child {
+      @media (max-width: 600px) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+.emailBox {
+  background-size: auto 140% !important;
+  padding: 100px !important;
+  background-color: #f2f2f3 !important;
+
+  @media (max-width: 1200px) {
+    padding-left: 40px !important;
+    padding-right: 0 !important;
+  }
+  @media (max-width: 900px) {
+    padding: 100px 0 !important;
+    padding-left: 40px !important;
+    text-align: center;
+  }
+}
+.email-div {
+  height: 300px;
+
+  @media (max-width: 600px) {
+    padding-bottom: 150px;
+    height: 400px;
+  }
+  @media (max-width: 900px) {
+    margin-bottom: 150px !important;
+  }
+}
+.iconsElement {
+  padding-right: 16px;
+}
+@media (max-width: 900px) {
+  .iconsElement {
+    margin: 0 auto !important;
+    padding-left: 0 !important;
+    padding-right: 0;
+  }
+}
+.styledInput {
+  border-radius: 30px !important;
+  height: 60px;
+  font-size: 16px;
+  width: 100% !important;
+  max-width: 100%;
+  color: #000000;
+  padding-left: 0.5em !important;
+  padding-right: 0.5em;
+  box-sizing: border-box;
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+body[class="darkTheme"] {
+  .blogPost {
+    background: #06080d;
+
+    &:hover {
+      background: #06080d;
+    }
+    & > div {
+      div:nth-child(1) {
+        img {
+          filter: drop-shadow(0px 0px 20px #fff);
+        }
+      }
+    }
+  }
+  .emailBox {
+    background-blend-mode: luminosity;
+    filter: invert(1);
+    button {
+      box-shadow: none !important;
+      background: #000 !important;
+      color: #fff !important;
+    }
+  }
+  .styledInput {
+    border: 1px solid #999 !important;
+    background: #fff !important;
+  }
+}

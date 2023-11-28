@@ -1,0 +1,16 @@
+.aotContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+    .aotOwnerTitle {
+        display: flex;
+        flex-direction: column;
+
+        .label {
+            font-family: "Inter", sans-serif;
+            color: #8991A2;
+        }
+    }
+}

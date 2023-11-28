@@ -1,0 +1,82 @@
+{
+  "root": "apps/usdb",
+  "sourceRoot": "apps/usdb/src",
+  "projectType": "application",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/web:webpack",
+      "outputs": ["{options.outputPath}"],
+      "defaultConfiguration": "production",
+      "options": {
+        "compiler": "babel",
+        "outputPath": "dist/apps/usdb",
+        "index": "apps/usdb/src/index.html",
+        "baseHref": "/",
+        "main": "apps/usdb/src/main.tsx",
+        "polyfills": "apps/usdb/src/polyfills.ts",
+        "tsConfig": "apps/usdb/tsconfig.app.json",
+        "assets": [
+          "apps/usdb/src/assets",
+          "apps/usdb/src/android-chrome-192x192.png",
+          "apps/usdb/src/android-chrome-256x256.png",
+          "apps/usdb/src/apple-touch-icon.png",
+          "apps/usdb/src/browserconfig.xml",
+          "apps/usdb/src/favicon.ico",
+          "apps/usdb/src/favicon-16x16.png",
+          "apps/usdb/src/favicon-32x32.png",
+          "apps/usdb/src/mstile-150x150.png",
+          "apps/usdb/src/safari-pinned-tab.svg",
+          "apps/usdb/src/site.webmanifest"
+        ],
+        "styles": ["apps/usdb/src/styles.scss"],
+        "scripts": [],
+        "webpackConfig": "apps/usdb/webpack.config.js"
+      },
+      "configurations": {
+        "production": {
+          "fileReplacements": [
+            {
+              "replace": "apps/usdb/src/environments/environment.ts",
+              "with": "apps/usdb/src/environments/environment.prod.ts"
+            }
+          ],
+          "optimization": true,
+          "outputHashing": "all",
+          "sourceMap": false,
+          "namedChunks": false,
+          "extractLicenses": true,
+          "vendorChunk": false
+        }
+      }
+    },
+    "serve": {
+      "executor": "@nrwl/web:dev-server",
+      "options": {
+        "buildTarget": "usdb:build:development",
+        "hmr": true
+      },
+      "configurations": {
+        "production": {
+          "buildTarget": "usdb:build:production",
+          "hmr": false
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["apps/usdb/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/usdb"],
+      "options": {
+        "jestConfig": "apps/usdb/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

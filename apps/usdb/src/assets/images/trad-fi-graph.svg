@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="831" height="376" viewBox="0 0 831 376">
+  <defs>
+    <linearGradient id="linear-gradient" y1="1.194" x2="0.789" y2="0.275" gradientUnits="objectBoundingBox">
+      <stop offset="0"/>
+      <stop offset="0.689" stop-color="#35c9bb"/>
+      <stop offset="1" stop-color="#a99bd1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" y1="1" x2="0" y2="0" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Group_12243" data-name="Group 12243" transform="translate(-915 -1832)">
+    <g id="Group_12241" data-name="Group 12241" transform="translate(7 21)">
+      <line id="Line_302" data-name="Line 302" y1="227" transform="translate(1654 1880.5)" fill="none" stroke="#000" stroke-width="1" stroke-dasharray="5 8"/>
+      <rect id="Rectangle_561" data-name="Rectangle 561" width="169" height="56" rx="12" transform="translate(1570 1909)" fill="#1a1a1a"/>
+      <path id="Polygon_1" data-name="Polygon 1" d="M9.5,0,19,13H0Z" transform="translate(1664 1977) rotate(180)" fill="#1a1a1a"/>
+      <g id="Group_11541" data-name="Group 11541" transform="translate(1601.342 1922.228)">
+        <circle id="Ellipse_326" data-name="Ellipse 326" cx="7" cy="7" r="7" transform="translate(-14.341 6.773)" fill="url(#linear-gradient)"/>
+        <text id="USDB:_32.25_" data-name="USDB: 32.25%" transform="translate(4.658 19.773)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="18" font-family="SegoeUI, Segoe UI" letter-spacing="-0.01em"><tspan x="0" y="0">USDB: 32.25%</tspan></text>
+      </g>
+    </g>
+    <g id="Group_12242" data-name="Group 12242" transform="translate(7 21)">
+      <text id="usdb_vs_other_offerings" data-name="USDB vs. Other Offerings" transform="translate(909 1812)" fill="#1a1a1a" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="30" font-family="SegoeUI, Segoe UI"><tspan x="0" y="32">USDB vs. Other Offerings</tspan></text>
+      <g id="Group_11538" data-name="Group 11538" transform="translate(442 1313)">
+        <text id="_0_" data-name="0%" transform="translate(613 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">0%</tspan></text>
+        <text id="_15_" data-name="15%" transform="translate(870 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">15%</tspan></text>
+        <text id="_20_" data-name="20%" transform="translate(958 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">20%</tspan></text>
+        <text id="_25_" data-name="25%" transform="translate(1052 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">25%</tspan></text>
+        <text id="_30_" data-name="30%" transform="translate(1143 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">30%</tspan></text>
+        <text id="_5_" data-name="5%" transform="translate(697 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">5%</tspan></text>
+        <text id="_10_" data-name="10%" transform="translate(779 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">10%</tspan></text>
+        <text id="_35_" data-name="35%" transform="translate(1237 869)" fill="#929ba0" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="16" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">35%</tspan></text>
+      </g>
+      <g id="Group_12240" data-name="Group 12240">
+        <text id="USDB_APY" data-name="USDB APY" transform="translate(1075 2121)" fill="#1a1a1a" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="-111.497" y="0">USDB APY</tspan></text>
+        <g id="Group_12239" data-name="Group 12239">
+          <g id="Group_11540" data-name="Group 11540" transform="translate(1654 2107) rotate(90)">
+            <rect id="Rectangle_478" data-name="Rectangle 478" width="16" height="593" fill="url(#linear-gradient-2)"/>
+          </g>
+          <g id="Group_11665" data-name="Group 11665" transform="translate(1459.643 2045) rotate(90)">
+            <path id="Rectangle_478-2" data-name="Rectangle 478" d="M2,0H14a2,2,0,0,1,2,2V398a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(0 0.643)"/>
+          </g>
+          <g id="Group_11666" data-name="Group 11666" transform="translate(1080.557 1921) rotate(90)">
+            <path id="Rectangle_478-3" data-name="Rectangle 478" d="M2,0H14a2,2,0,0,1,2,2V19a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(0 0.557)"/>
+          </g>
+          <g id="Group_11667" data-name="Group 11667" transform="translate(1225.32 1983) rotate(90)">
+            <path id="Rectangle_478-4" data-name="Rectangle 478" d="M2,0H14a2,2,0,0,1,2,2V209a0,0,0,0,1,0,0H0a0,0,0,0,1,0,0V2A2,2,0,0,1,2,0Z" transform="translate(0 -44.68)"/>
+          </g>
+        </g>
+        <text id="UST_APY" data-name="UST APY" transform="translate(1075 2059)" fill="#696c80" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="-100.239" y="0">UST APY</tspan></text>
+        <text id="S_P_500_APR_based_on_5y_avg" data-name="S&amp;P 500 APR
+based on 5y avg" transform="translate(1035 1986)" fill="#696c80" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="-92.007" y="0">S&amp;P 500 APR </tspan><tspan x="-108.091" y="22">based on 5y avg</tspan></text>
+        <text id="US_Money_Market_6mo._APR" data-name="US Money Market
+6mo. APR" transform="translate(1035 1920)" fill="#696c80" stroke="rgba(0,0,0,0)" stroke-width="1" font-size="15" font-family="SegoeUI, Segoe UI"><tspan x="-123.149" y="0">US Money Market </tspan><tspan x="-64.204" y="22">6mo. APR</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

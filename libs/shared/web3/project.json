@@ -1,0 +1,23 @@
+{
+  "root": "libs/shared/web3",
+  "sourceRoot": "libs/shared/web3/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/web3/**/*.{ts,tsx,js,jsx}"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/web3"],
+      "options": {
+        "jestConfig": "libs/shared/web3/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.profileImageContainer {
+  border-radius: 50%;
+  border: 7px solid white;
+  height: 190px;
+  width: 190px;
+}
+
+.iconWrapper {
+  border-radius: 50%;
+  border: 5px solid white;
+}
+.left,
+.right {
+  @media (max-width: 1188px) {
+    width: 100%;
+    justify-content: center !important;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 640px) {
+    font-size: 12px;
+  }
+}
+.right {
+  @media (max-width: 1188px) {
+    margin-left: 70px;
+  }
+  @media (max-width: 520px) {
+    margin-left: 0px;
+  }
+}
+@media (max-width: 600px) {
+  .profileImageContainer {
+    height: 190px;
+    width: 190px;
+  }
+}
+@media (max-width: 360px) {
+}
+
+.left button,
+.right > button,
+.right > a {
+  box-shadow: 0px 25px 50px #7e9aa92b;
+  font-size: 0.8rem;
+  font-family: Inter, Roboto, sans-serif;
+  padding: 0.8em 2em;
+}
+body[class*=darkTheme] {
+  .accountButton {
+    img {filter:invert(1)}
+    &.noInvert {
+      img {filter:invert(0)}
+    }
+    background:#222;
+  }
+}

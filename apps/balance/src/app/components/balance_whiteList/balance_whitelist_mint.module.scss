@@ -1,0 +1,13 @@
+@font-face {
+  font-family: MonumentExtendedRegular;
+  src: url("../../../assets/fonts/MonumentExtended-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: Sequel100Black-55;
+  src: url("../../../assets/fonts/Sequel100Black-55.ttf") format("opentype");
+}
+.dropLineSection {
+  @media (max-width: 600px) {
+    height: 65px;
+  }
+}

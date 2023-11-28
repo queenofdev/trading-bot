@@ -1,0 +1,27 @@
+.mainContainer {
+    padding-bottom: 2em;
+    display: flex;
+    flex-direction: row;
+
+    .textContainer {
+        padding-left: 10px;
+        display: inline;
+        flex-direction: row;
+        color: #8991A2;
+        .strong {
+           color: #000; 
+           display: inline-block;
+        }
+    }
+}
+
+
+body[class*=darkTheme] {
+
+    .textContainer {
+        .strong {
+            color: #fff;
+            display: inline-block;
+        }
+    }
+}
